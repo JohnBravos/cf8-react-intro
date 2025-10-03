@@ -8,12 +8,29 @@
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import Card from "./components/Card.tsx";
 import Layout from "./components/Layout.tsx";
+// import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
+// import CounterAdvanced from "./components/CounterAdvanced.tsx";
+import Timer from "./components/Timer.tsx";
+// import {useEffect} from "react";
 // import Counter from "./components/Counter.tsx";
-import NameChanger from "./components/NameChanger.tsx";
+// import NameChanger from "./components/NameChanger.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 
 function App() {
+
+    // useEffect(() => {
+    //     const id: number = setInterval(() => console.log("tick"), 1000)
+    //     return() => clearInterval(id)
+    // },[])
+
+    // useEffect(() => {
+    //     let counter: number = 1;
+    //     const id: number = setInterval(() => {
+    //         console.log(counter++);
+    //     }, 1000)
+    //     return() => clearInterval(id);
+    // }, []);
 
   return (
       <>
@@ -41,7 +58,10 @@ function App() {
               {/*<FunctionalComponentWithState />*/}
               {/*<ClassComponentWithState />*/}
               {/*<Counter />*/}
-              <NameChanger/>
+              {/*<NameChanger/>*/}
+              {/*<CounterWithMoreStates/>*/}
+              {/*<CounterAdvanced />*/}
+              <Timer />
           </Layout>
       </>
   )
