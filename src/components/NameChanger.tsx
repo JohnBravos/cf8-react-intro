@@ -9,7 +9,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     return (
         <>
         <h1 className="text-center text-xl mt-12">Hello, {name || "Stranger"}</h1>
-            <div>
+            <div className="text-center mt-4">
                 <input
                     type="text"
                     value={name}
