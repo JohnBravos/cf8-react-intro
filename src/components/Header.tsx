@@ -8,7 +8,7 @@ const Header = () => {
                         alt="CF Logo"
                     />
                     <nav className="flex gap-4 text-white font-medium">
-                        <a href="#">Home</a>
+                        <a className="hover:underline hover:underline-offset-4" href="#">Home</a>
                     </nav>
                 </div>
             </header>
