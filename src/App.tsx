@@ -17,6 +17,8 @@ import HomePage from "./pages/HomePage.tsx";
 import Timer from "./components/Timer.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
 import UserPage from "./pages/UserPage.tsx";
+import ControlledInput from "./components/ControlledInput.tsx";
+import UncontrolledInput from "./components/ViteIntro/UncontrolledInput.tsx";
 // import CounterWithRef from "./components/CounterWIthRef.tsx";
 // import PreviousValue from "./components/PreviousValue.tsx";
 // import WindowSize from "./components/WindowSize.tsx";
@@ -101,6 +103,8 @@ function App() {
                       <Route path="examples?">
                          <Route path="name-changer" element={<NameChanger/>}/>
                          <Route path="timer" element={<Timer/>}/>
+                          <Route path="controlled-input" element={<ControlledInput/>}/>
+                          <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
                           {/*<Route path="*" element={<ExamplePage/>}/>*/}
                       </Route>
                   </Route>
@@ -115,7 +119,7 @@ function App() {
                       </Route>
                   </Route>
 
-                  <Route path="*" element={<PageNotFound/>}/>
+                  {/*<Route path="*" element={<PageNotFound/>}/>*/}
               </Routes>
           </BrowserRouter>
 
