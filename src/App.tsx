@@ -20,6 +20,7 @@ import UserPage from "./pages/UserPage.tsx";
 import ControlledInput from "./components/ControlledInput.tsx";
 import UncontrolledInput from "./components/ViteIntro/UncontrolledInput.tsx";
 import MultifieldForm from "./components/MultifieldForm.tsx";
+import MultifieldFormWithValidation from "./components/MultifieldFormWithValidation.tsx";
 // import CounterWithRef from "./components/CounterWIthRef.tsx";
 // import PreviousValue from "./components/PreviousValue.tsx";
 // import WindowSize from "./components/WindowSize.tsx";
@@ -107,6 +108,7 @@ function App() {
                           <Route path="controlled-input" element={<ControlledInput/>}/>
                           <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
                           <Route path="multifield-form" element={<MultifieldForm/>}/>
+                          <Route path="multifield-form-validation" element={<MultifieldFormWithValidation/>}/>
                           {/*<Route path="*" element={<ExamplePage/>}/>*/}
                       </Route>
                   </Route>
