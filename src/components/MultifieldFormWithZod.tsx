@@ -42,6 +42,7 @@ const MultifieldFormWithZod = () => {
         // {success: true, data: validateData}
         // {success: false, error: ZodError}
         if(!result.success) {
+            console.log(result.error.issues);
             const newErrors: FormErrors = {}
             result.error.issues.forEach(issue => {
                 const fieldName = issue.path[0] as keyof FormValues;
